@@ -9,3 +9,7 @@ Diff Checker for Chrome
 This extension only works on the following matched URL: "*://*.sec.gov/*"
 Example page on which the page action will be active: https://www.sec.gov/Archives/edgar/data/883975/000149315218010510/formdef-14a.htm
 
+Debugging notes:
+Open the background script console: on the Extensions page/Inspect views (background page)
+Open the content script console: right click on an active content script page, right click the extention icon and click "inspect popup"
+Open chrome console (ctrl+shift+i)
