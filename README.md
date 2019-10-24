@@ -17,7 +17,8 @@ Example page on which the page action will be active: https://www.sec.gov/Archiv
 Other notes:
 On/Off state is saved, even if the browser tab or window is closed.
 
-//TODO 
-//After one cycle of the on/off state, the paragraphs are no longer tied to the "Click" event listener.
-//Reset should clear everything and start fresh, which means clearning the array, which is more complicated than anticipated.
-//Comparing each of the two paragraphs per word, and showing the paragraphs side by side with similarities (maybe three or more words being the same within a tolerance of +-5 of the indexed location of the comparing array)
+//TODO
+1. After one cycle of the on/off state, the paragraphs are no longer tied to the "Click" event listener.
+2. Reset should clear everything and start fresh, which means clearning the array, which is more complicated than anticipated.
+3. Comparing each of the two paragraphs per word, and 
+4. Showing the paragraphs side by side with similarities (maybe three or more words being the same within a tolerance of +-5 of the indexed location of the comparing array)
