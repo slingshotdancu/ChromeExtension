@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Test Extension",
+  "version": "1.0",
+  "offline_enabled": true,
+  "permissions": [
+	"storage"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*.sec.gov/*"],
+    "js": ["jquery.js", "content.js"],
+	"css": ["styles.css"],
+    "run_at": "document_idle",
+    "all_frames": false
+  }],
+
+  "page_action": {
+    "default_title": "Test Extension",
+    "default_popup": "popup.html"
+  }
+}

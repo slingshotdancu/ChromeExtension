@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+*{
+	font-family: "DIN 2014", Calibri, sans-serif;
+}
+button {
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: transparent;
+}
+</style>  
+</head>
+  <body>
+    <h3 style="font-weight:bold; text-align:center;">DOM Info</h3>
+    <table border="1" cellpadding="3" style="border-collapse:collapse;">
+      <tr>
+        <td nowrap>Total number of elements:</td>
+        <td align="right">
+		<span id="total">N/A</span>
+		</td>
+      </tr>
+      </table>
+	<button id="turnOn">Off</button>
+	<button id="clear">Clear</button>
+	<button id="reset">Reset</button>
+	<div id="copies"></div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popup.js"></script> 	
+ </body>
+</html>
