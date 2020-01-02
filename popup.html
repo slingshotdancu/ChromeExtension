@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<style>
-*{
-	font-family: "DIN 2014", Calibri, sans-serif;
-}
-button {
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: transparent;
-}
-</style>  
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="popupstyles.css" rel="stylesheet">
 </head>
-  <body>
-    <h3 style="font-weight:bold; text-align:center;">DOM Info</h3>
-    <table border="1" cellpadding="3" style="border-collapse:collapse;">
-      <tr>
-        <td nowrap>Total number of elements:</td>
-        <td align="right">
-		<span id="total">N/A</span>
-		</td>
-      </tr>
-      </table>
-	<button id="turnOn">Off</button>
-	<button id="clear">Clear</button>
-	<button id="reset">Reset</button>
-	<div id="copies"></div>
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="popup.js"></script> 	
- </body>
+
+<body>
+    <h2>DIFF CHECKER</h2>
+	<a href="info.html" target="new">
+	<button class="infoButton" id="infoEntity">
+	<img class="info" src="info.png">
+	</button>
+    </a>
+	<textarea id="paragraphOne" title="Copy/Paste First Selection Here"></textarea>
+    <textarea id="paragraphTwo" title="Copy/Paste Second Selection Here"></textarea>
+    <button class="clear" id="clearButton">Clear</button>
+	<p id="diffOutput"></p>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
 </html>

@@ -1,26 +1,34 @@
 {
-  "manifest_version": 2,
-  "name": "Test Extension",
-  "version": "1.0",
-  "offline_enabled": true,
-  "permissions": [
-	"storage"
+    "manifest_version": 2,
+    "name": "Diff Checker",
+    "version": "1.0",
+    "description": "Tool for checking differences between two selected paragraphs.  Currently only enabled for sites sec.gov and otcmarkets.com.",
+    "offline_enabled": true,
+    "permissions": [
+	"storage",
+	"tabs",
+	"webNavigation",
+	"background",
+	"*://*.google.com/*",
+	"*://*.sec.gov/*"
   ],
-  "background": {
-    "persistent": false,
-    "scripts": ["background.js"]
-  },
-
-  "content_scripts": [{
-    "matches": ["*://*.sec.gov/*"],
-    "js": ["jquery.js", "content.js"],
-	"css": ["styles.css"],
-    "run_at": "document_idle",
-    "all_frames": false
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://*.sec.gov/*", "*://*.otcmarkets.com/*", "*://*.google.com/*"],
+        "js": ["jquery.js", "content.js"],
+        "run_at": "document_idle",
+        "all_frames": false
   }],
-
-  "page_action": {
-    "default_title": "Test Extension",
-    "default_popup": "popup.html"
-  }
+    "page_action": {
+        "default_title": "Diff Checker",
+        "default_popup": "popup.html"
+    }  
 }

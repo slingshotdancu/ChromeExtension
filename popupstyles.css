@@ -1,0 +1,82 @@
+body {
+    background-image: url("background.png");
+}
+
+h2 {
+    color: white;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px rgb(48, 48, 48);
+    text-align: center;
+}
+
+textarea {
+    font-family: "Open Sans";
+    font-size: inherit;
+    font-weight: 300;
+    border-radius: 3px 3px 3px 3px;
+    height: 8em;
+    width: 24em;
+    background-color: transparent;
+    color: white;
+}
+
+span.del {
+    color: white;
+    border: 1px solid rgb(0, 248, 248);
+    border-radius: 4px 4px 4px 4px;
+    font-weight: 300;
+}
+
+span.ins {
+    color: white;
+    border: 1px solid rgb(255, 48, 135);
+    border-radius: 4px 4px 4px 4px;
+    font-weight: 300;
+}
+
+button.infoButton {
+    float: right;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#paragraphOne {
+    box-shadow: 1px 1px 2px rgb(0, 248, 248);
+    border: 1px solid rgb(0, 248, 248);
+}
+
+#paragraphTwo {
+    margin-top: 2px;
+    box-shadow: 1px 1px 2px rgb(255, 48, 135);
+    border: 1px solid rgb(255, 48, 135);
+}
+
+#diffOutput {
+    color: white;
+    font-family: "Open Sans";
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.info {
+    max-height: 7.5%;
+    max-width: 7.5%;
+    background-color: transparent;
+    float: right;
+    margin: none;
+    padding: none;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.clear {
+	border: 1px solid black;
+	border-radius: 3px;
+	float: right;
+	font-family: "Open Sans";
+	font-weight: 600;
+	background-color: white;
+	color: #363636;
+}
